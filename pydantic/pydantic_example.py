@@ -1,7 +1,7 @@
 from pydantic import BaseModel, field_validator, model_validator
 import re
 
-# ✅ 1. Validate password strength
+# 1. Validate password strength
 class UserWithValidation(BaseModel):
     username: str
     password: str
@@ -12,7 +12,7 @@ class UserWithValidation(BaseModel):
             raise ValueError("Password must be at least 8 characters long and contain a number and an uppercase letter.")
         return value
 
-# ✅ 2. Validate all numbers are even
+# 2. Validate all numbers are even
 class EvenNumbers(BaseModel):
     numbers: list[int]
 
@@ -22,11 +22,11 @@ class EvenNumbers(BaseModel):
             raise ValueError("All numbers must be even")
         return values
 
-# ✅ Usage
-print("\n✅ Validating Strong Password")
+#  Usage
+print("\n Validating Strong Password")
 user_valid = UserWithValidation(username="bob", password="StrongPass123")
 print(user_valid)
 
-print("\n✅ Validating Even Numbers")
+print("\n Validating Even Numbers")
 even_valid = EvenNumbers(numbers=[2, 4, 6])
 print(even_valid)
