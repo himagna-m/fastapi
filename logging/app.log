@@ -1,0 +1,5 @@
+2025-06-24 09:10:22,510 - DEBUG - This is a DEBUG message.
+2025-06-24 09:10:22,510 - INFO - This is an INFO message.
+2025-06-24 09:10:22,510 - WARNING - This is a WARNING message.
+2025-06-24 09:10:22,510 - ERROR - This is an ERROR message.
+2025-06-24 09:10:22,510 - CRITICAL - This is a CRITICAL message.
