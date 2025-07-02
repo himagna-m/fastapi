@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+streamlit
+sounddevice
+numpy
+websockets
+openai-whisper
+groq
